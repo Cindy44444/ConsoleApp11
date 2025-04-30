@@ -10,6 +10,8 @@ namespace ConsoleApp11
     {
         private List<Alumno> listaalumno = new List<Alumno>()
         {new Alumno("Cindy",20,112816), new Alumno("Rebe",20,112869)};
+        
+
         public void Actualizar(int matricula, string nombre, int edad)
         {
             throw new NotImplementedException();
@@ -20,10 +22,9 @@ namespace ConsoleApp11
             throw new NotImplementedException();
         }
 
-        
         public List<Alumno> Consultar()
         {
-            throw new NotImplementedException();
+            return listaalumno;
         }
 
         public void Eliminar(int matricula)
