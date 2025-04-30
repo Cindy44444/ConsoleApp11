@@ -8,6 +8,7 @@ namespace ConsoleApp11
 {
     internal class Acciones : IAcciones
     {
+        Alumno a = new Alumno();
         private List<Alumno> listaalumno = new List<Alumno>()
         {new Alumno("Cindy",20,112816), new Alumno("Rebe",20,112869)};
         
@@ -19,7 +20,7 @@ namespace ConsoleApp11
 
         public void Agregar(int matricula, string nombre, int edad)
         {
-            throw new NotImplementedException();
+            listaalumno.Add(new Alumno(a.Name = nombre, a.Edad=edad, a.Matricula = matricula));
         }
 
         public List<Alumno> Consultar()
