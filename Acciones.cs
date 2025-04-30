@@ -30,7 +30,15 @@ namespace ConsoleApp11
 
         public void Eliminar(int matricula)
         {
-            throw new NotImplementedException();
+           var objetoeliminar = listaalumno.FirstOrDefault(x  => x.Matricula == matricula);
+            if (objetoeliminar != null)
+            {
+                listaalumno.Remove(objetoeliminar);
+            }
+            else
+            {
+                Console.WriteLine("No se puede eliminar");
+            }
         }
 
         public void ExportarExcel()
