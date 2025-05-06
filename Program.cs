@@ -41,7 +41,7 @@ namespace ConsoleApp11
                         break;
                     case MENU.Actualizar:
                         Console.WriteLine("Dame matricula a actualizar:");
-                        int matriactu = Convert.ToInt32(Console.Read());
+                        int matriactu = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Nombre:");
                         string nom = Console.ReadLine();
                         Console.WriteLine("Edad:");
