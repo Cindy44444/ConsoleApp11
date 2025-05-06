@@ -15,7 +15,17 @@ namespace ConsoleApp11
 
         public void Actualizar(int matricula, string nombre, int edad)
         {
-            throw new NotImplementedException();
+            var actu = listaalumno.First(x=> x.Matricula == matricula);
+            if (actu ! = null)
+            {
+                Console.WriteLine("Nombre:");
+                actu.Name = Console.ReadLine();
+                Console.WriteLine("Edad:");
+                actu.Edad = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Matricula:");
+                actu.Matricula = Convert.ToInt32(Console.ReadLine());
+
+            }
         }
 
         public void Agregar(int matricula, string nombre, int edad)

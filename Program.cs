@@ -40,6 +40,8 @@ namespace ConsoleApp11
                         acciones.Actualizar(matricula,nombre,edad)
                         break;
                     case MENU.Actualizar:
+                        Console.WriteLine("Dame matricula a actualizar:");
+                        int matricula = Convert.ToInt32(Console.Read());
                         break;
                     case MENU.Eliminar:
                         Console.WriteLine("Dame matricula a eliminar:");
