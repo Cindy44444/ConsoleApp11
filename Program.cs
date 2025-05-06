@@ -37,7 +37,7 @@ namespace ConsoleApp11
                         int edad = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Matricula");
                         int matricula = Convert.ToInt32(Console.ReadLine());
-                        acciones.Actualizar(matricula, nombre, edad);
+                        acciones.Agregar(matricula, nombre, edad);
                         break;
                     case MENU.Actualizar:
                         Console.WriteLine("Dame matricula a actualizar:");
