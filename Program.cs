@@ -34,14 +34,14 @@ namespace ConsoleApp11
                         Console.WriteLine("Nombre:");
                         string nombre = Console.ReadLine();
                         Console.WriteLine("Edad:");
-                        int edad = Convert.ToInt32(Console.ReadLine(););
+                        int edad = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Matricula");
-                        int matricula = Convert.ToInt32(Console.ReadLine(););
-                        acciones.Actualizar(matricula,nombre,edad)
+                        int matricula = Convert.ToInt32(Console.ReadLine());
+                        acciones.Actualizar(matricula, nombre, edad);
                         break;
                     case MENU.Actualizar:
                         Console.WriteLine("Dame matricula a actualizar:");
-                        int matricula = Convert.ToInt32(Console.Read());
+                        int matri = Convert.ToInt32(Console.Read());
                         break;
                     case MENU.Eliminar:
                         Console.WriteLine("Dame matricula a eliminar:");
