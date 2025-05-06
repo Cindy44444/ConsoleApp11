@@ -13,9 +13,19 @@ namespace ConsoleApp11
         {new Alumno("Cindy",20,112816), new Alumno("Rebe",20,112869)};
         
 
+        public void Actualizar(int matriactu, int mat, string nom, int years)
+        {
+            var actualizaralumno = listaalumno.FirstOrDefault(x => x.Matricula == matriactu);
+            if (actualizaralumno != null)
+            {
+                listaalumno.Remove(actualizaralumno);
+                listaalumno.Add(new Alumno(a.Name = nom, a.Edad = years, a.Matricula = mat));
+            }
+        }
+
         public void Actualizar(int matricula, string nombre, int edad)
         {
-            
+            throw new NotImplementedException();
         }
 
         public void Agregar(int matricula, string nombre, int edad)
