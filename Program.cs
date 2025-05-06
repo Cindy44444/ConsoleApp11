@@ -31,10 +31,20 @@ namespace ConsoleApp11
                         }
                         break;
                     case MENU.Agregar:
+                        Console.WriteLine("Nombre:");
+                        string nombre = Console.ReadLine();
+                        Console.WriteLine("Edad:");
+                        int edad = Convert.ToInt32(Console.ReadLine(););
+                        Console.WriteLine("Matricula");
+                        int matricula = Convert.ToInt32(Console.ReadLine(););
+                        acciones.Actualizar(matricula,nombre,edad)
                         break;
                     case MENU.Actualizar:
                         break;
                     case MENU.Eliminar:
+                        Console.WriteLine("Dame matricula a eliminar:");
+                        int matriculaeliminar = Convert.ToInt32(Console.ReadLine());
+                        acciones.Eliminar(matriculaeliminar);
                         break;
                 }
             }
