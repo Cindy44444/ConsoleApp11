@@ -54,6 +54,7 @@ namespace ConsoleApp11
         public void ExportarExcel()
         {
             throw new NotImplementedException();
+            //no se, no le entendi a chat gpt
         }
     }
 }
